@@ -2270,7 +2270,7 @@ function Nav() {
   return (
     <nav style={{ display:"flex", justifyContent:"space-between", alignItems:"center", padding:"14px 24px", borderBottom:`1px solid ${C.border}`, position:"sticky", top:0, background:"rgba(6,9,15,0.95)", backdropFilter:"blur(12px)", zIndex:100 }}>
       <a href="https://toolsrift.com" style={{ display:"flex", alignItems:"center", gap:10, textDecoration:"none" }}>
-        <img src="/logo.svg" alt="ToolsRift" style={{height:36}} onError={(e) => { e.target.style.display='none' }}/>
+        <img src="/icon.svg" alt="ToolsRift" style={{height:36}} onError={(e) => { e.target.style.display='none' }}/>
         <span className="tr-nav-badge" style={{ fontSize:11, color:C.muted, background:"rgba(255,255,255,0.05)", padding:"2px 8px", borderRadius:10 }}>Text Tools</span>
       </a>
       <div style={{ display:"flex", gap:6 }}>
