@@ -2291,7 +2291,7 @@ function Nav() {
 }
 
 // ─── APP ──────────────────────────────────────────────────────────────────────
-function ToolsRiftText() {
+function ToolsRiftText({ isApp = false }) {
   const route = useAppRouter();
   return (
     <div style={{ minHeight:"100vh", background:C.bg, color:C.text, fontFamily:"'Plus Jakarta Sans',sans-serif" }}>
@@ -2300,7 +2300,7 @@ function ToolsRiftText() {
       {route.page==="home" && <HomePage />}
       {route.page==="tool" && <ToolPage toolId={route.toolId} />}
       {route.page==="category" && <CategoryPage catId={route.catId} />}
-      <SiteFooter currentPage="text"/>
+      {!isApp && <SiteFooter currentPage="text"/>}
     </div>
   );
 }
