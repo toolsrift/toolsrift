@@ -21,5 +21,5 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: ['/((?!_next|api|favicon.ico|icon|manifest|sw|workbox|\\.well-known).*)'],
+  matcher: ['/((?!_next|api|favicon\\.ico|icon|manifest|sw|workbox|\\.well-known).*)'],
 }
