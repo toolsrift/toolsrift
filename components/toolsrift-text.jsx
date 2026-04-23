@@ -2269,8 +2269,8 @@ function Nav() {
   useEffect(() => { localStorage.setItem("tr_theme", isDark ? "dark" : "light"); document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light"); }, [isDark]);
   return (
     <nav style={{ display:"flex", justifyContent:"space-between", alignItems:"center", padding:"14px 24px", borderBottom:`1px solid ${C.border}`, position:"sticky", top:0, background:"rgba(6,9,15,0.95)", backdropFilter:"blur(12px)", zIndex:100 }}>
-      <a href="https://toolsrift.com" style={{ display:"flex", alignItems:"center", gap:10, textDecoration:"none" }}>
-        <img src="/icon.svg" alt="ToolsRift" style={{height:36}} onError={(e) => { e.target.style.display='none' }}/>
+      <a href="#/" style={{ display:"flex", alignItems:"center", gap:10, textDecoration:"none" }}>
+        <img src="/icon-text-192.png" alt="ToolsRift Text Tools" style={{height:36,borderRadius:8}} onError={(e) => { e.target.style.display='none' }}/>
         <span className="tr-nav-badge" style={{ fontSize:11, color:C.muted, background:"rgba(255,255,255,0.05)", padding:"2px 8px", borderRadius:10 }}>Text Tools</span>
       </a>
       <div style={{ display:"flex", gap:6 }}>
@@ -2283,7 +2283,7 @@ function Nav() {
           ))}
         </div>
         {/* PHASE 2: <UsageCounter/> */}
-        <a href="/" style={{display:"flex",alignItems:"center",gap:5,padding:"6px 14px",borderRadius:8,fontSize:12,fontWeight:600,color:"#E2E8F0",textDecoration:"none",background:"rgba(255,255,255,0.06)",border:"1px solid rgba(255,255,255,0.08)",marginLeft:4}}>🏠 Home</a>
+        <a href="#/" style={{display:"flex",alignItems:"center",gap:5,padding:"6px 14px",borderRadius:8,fontSize:12,fontWeight:600,color:"#E2E8F0",textDecoration:"none",background:"rgba(255,255,255,0.06)",border:"1px solid rgba(255,255,255,0.08)",marginLeft:4}}>🏠 Home</a>
         <button onClick={() => setIsDark(d => !d)} title={isDark ? "Switch to Light" : "Switch to Dark"} style={{ background:"rgba(255,255,255,0.06)", border:"1px solid rgba(255,255,255,0.08)", borderRadius:8, padding:"6px 10px", cursor:"pointer", fontSize:16, color:C.muted, marginLeft:4 }}>{isDark ? "☀️" : "🌙"}</button>
       </div>
     </nav>
