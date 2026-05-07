@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import SEOHead from '../components/SEOHead'
 
 const C = {
   bg: '#06090F', surface: '#0D1117', surface2: '#111827',
@@ -37,37 +37,7 @@ const CATEGORIES_PREVIEW = [
 export default function About() {
   return (
     <>
-      <Head>
-        <title>About ToolsRift — Free Online Tools Platform | ToolsRift</title>
-        <meta name="description" content="ToolsRift is a free online tools platform with 544+ tools across 34 categories. Built for speed, privacy and accessibility. No signup, no limits." />
-        <meta property="og:title" content="About ToolsRift — Free Online Tools Platform" />
-        <meta property="og:description" content="544+ free online tools built for speed, privacy and everyone. No signup required." />
-        <meta property="og:url" content="https://toolsrift.com/about" />
-        <meta property="og:site_name" content="ToolsRift" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="og:image" content="https://toolsrift.com/og-image.svg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta name="twitter:image" content="https://toolsrift.com/og-image.svg" />
-        <link rel="canonical" href="https://toolsrift.com/about" />
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "ToolsRift",
-          "url": "https://toolsrift.com",
-          "description": "Free online tools platform with 544+ tools across 34 categories.",
-          "foundingLocation": { "@type": "Place", "name": "Hyderabad, India" },
-          "sameAs": ["https://toolsrift.com"]
-        })}</script>
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://toolsrift.com" },
-            { "@type": "ListItem", "position": 2, "name": "About" }
-          ]
-        })}</script>
-      </Head>
+      <SEOHead path="/about" />
 
       <div style={{ background: C.bg, minHeight: '100vh', fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif", color: C.text }}>
 
