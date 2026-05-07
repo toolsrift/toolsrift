@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import SEOHead from '../components/SEOHead'
 
 const S = {
   bg: '#06090F', surface: '#0D1117', border: 'rgba(255,255,255,0.08)',
@@ -8,16 +8,7 @@ const S = {
 export default function Pricing() {
   return (
     <>
-      <Head>
-        <title>Pro Plans Coming Soon — ToolsRift</title>
-        <meta name="description" content="All 544+ ToolsRift tools are completely free during our launch. Pro plans with advanced features will be available soon." />
-        <meta property="og:title" content="Pro Plans Coming Soon — ToolsRift" />
-        <meta property="og:description" content="All 544+ tools are completely free during our launch. Pro plans coming soon." />
-        <meta property="og:url" content="https://toolsrift.com/pricing" />
-        <meta property="og:site_name" content="ToolsRift" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://toolsrift.com/pricing" />
-      </Head>
+      <SEOHead path="/pricing" />
 
       <div style={{ minHeight: '100vh', background: S.bg, color: S.text, fontFamily: "'Plus Jakarta Sans',sans-serif" }}>
         <style>{`*{box-sizing:border-box;margin:0;padding:0}body{background:#06090F}`}</style>
