@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import SEOHead from '../components/SEOHead'
 
 const C = {
   bg: '#06090F', surface: '#0D1117', border: 'rgba(255,255,255,0.08)',
@@ -94,28 +94,7 @@ We aim to respond to all privacy-related inquiries within 5 business days.`
 export default function PrivacyPolicy() {
   return (
     <>
-      <Head>
-        <title>Privacy Policy | ToolsRift</title>
-        <meta name="description" content="ToolsRift Privacy Policy. Learn how we collect, use and protect your data. We never upload your files and collect minimal information." />
-        <meta property="og:title" content="Privacy Policy | ToolsRift" />
-        <meta property="og:description" content="ToolsRift Privacy Policy — minimal data collection, no file uploads, browser-based processing." />
-        <meta property="og:url" content="https://toolsrift.com/privacy-policy" />
-        <meta property="og:site_name" content="ToolsRift" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="og:image" content="https://toolsrift.com/og-image.svg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta name="twitter:image" content="https://toolsrift.com/og-image.svg" />
-        <link rel="canonical" href="https://toolsrift.com/privacy-policy" />
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://toolsrift.com" },
-            { "@type": "ListItem", "position": 2, "name": "Privacy Policy" }
-          ]
-        })}</script>
-      </Head>
+      <SEOHead path="/privacy-policy" />
 
       <div style={{ background: C.bg, minHeight: '100vh', fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif", color: C.text }}>
 
