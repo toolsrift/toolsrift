@@ -1,15 +1,13 @@
-import Head from 'next/head'
+import SEOHead from '../components/SEOHead'
 import dynamic from 'next/dynamic'
+
 const ToolsRiftCss = dynamic(() => import('../components/toolsrift-css'), { ssr: false })
-export default function Css() {
-  return (<><Head>
-        <title>Free CSS Generators — Gradient, Box Shadow, Border Radius &amp; More | ToolsRift</title>
-        <meta name="description" content="20+ free CSS generator tools. Create CSS gradients, box shadows, border radius, animations, flexbox and grid layouts with live preview." />
-        <meta property="og:title" content="Free CSS Generators — Gradient, Box Shadow, Border Radius &amp; More | ToolsRift" />
-        <meta property="og:description" content="20+ free CSS generator tools. Create CSS gradients, box shadows, border radius, animations, flexbox and grid layouts with live preview." />
-        <meta property="og:url" content="https://toolsrift.com/css" />
-        <meta property="og:site_name" content="ToolsRift" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://toolsrift.com/css" />
-      </Head><ToolsRiftCss /></>)
+
+export default function Page() {
+  return (
+    <>
+      <SEOHead path="/css" />
+      <ToolsRiftCss />
+    </>
+  )
 }
