@@ -9,6 +9,11 @@ export default function MyDocument({ manifest }) {
         <link rel="manifest" href={manifest} />
 
         {/* ============================================
+            Google AdSense — site ownership verification
+            ============================================ */}
+        <meta name="google-adsense-account" content="ca-pub-4864313539537760" />
+
+        {/* ============================================
             FAVICONS — Full set for all browsers
             Google Search requires PNG or ICO (not SVG)
             ============================================ */}
